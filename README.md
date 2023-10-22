@@ -14,16 +14,11 @@ https://loadbalancing.se/2021/03/28/installing-troubleshooting-and-running-bigip
 
 Tips: 
 Don't forget to Increase Restjavad memory on BIG-IP
-Please remove all the CMs that may result to conflicts with the newly created object in Ingress. 
-For CIS, the Service is the center of the universe.
-    It links to the Deployment Configuration via the app label
-    It links to the Configuration Map via the cis.f5.com/as3-tenant: <whatever> label
   
-```
-BIG-IP1: 10.201.10.156 (mgmt) / 172.16.100.156 on Version 16.1.0
-Kubernetes Master Node: 10.201.10.151 on Ubuntu 18.04 LTS and kubernetes version v1.25.4; containerd://1.5.9
-f5-appsvcs 	3.40.0
-```
+- BIG-IP1: 10.201.10.156 (mgmt) / 172.16.100.156 on Version 16.1.0
+- Kubernetes Master Node: 10.201.10.179 on Ubuntu 18.04 LTS and kubernetes version v1.25.4; containerd://1.5.9
+- f5-appsvcs 	3.40.0
+
     
 ``` 
 git clone https://github.com/ericausente/cis-ingress.git
