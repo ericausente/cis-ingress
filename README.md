@@ -30,7 +30,8 @@ kubectl create secret generic bigip-login -n kube-system --from-literal=username
 kubectl create serviceaccount bigip-ctlr -n kube-system
 kubectl apply -f k8s_rbac.yaml
 kubectl apply -f https://raw.githubusercontent.com/F5Networks/k8s-bigip-ctlr/master/docs/config_examples/rbac/clusterrole.yaml
-kubectl apply -f https://raw.githubusercontent.com/F5Networks/k8s-bigip-ctlr/master/docs/config_examples/customResourceDefinitions/customresourcedefinitions.yml
+### In Prep for VS CRD Later On
+https://raw.githubusercontent.com/F5Networks/k8s-bigip-ctlr/refs/heads/master/docs/cis-20.x/config_examples/customResourceDefinitions/stable/customresourcedefinitions.yml
 kubectl apply -f  cis-deploy.yaml
 kubectl apply -f ingress-class.yaml
 ``` 
